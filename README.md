@@ -4,6 +4,8 @@
 # microTopOpt
 Democratizing Microstructures - A Dolphin-Adjoint Code
 
+Optimal Microstructures in just a bit over 100 lines of code. Made possible via Dolfin-Adjoint which automatically calculates the adjoint system for the microscopic elasticity problem.
+
 # Install & Run
 
 Step 1: [Install Anaconda](https://docs.continuum.io/anaconda/install/)
