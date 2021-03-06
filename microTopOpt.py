@@ -63,7 +63,7 @@ def microTopOpt():
     AT1111, AT1122, AT2222 = 0.2, -0.1, 0.2
 
     # Parameters
-    vc = 0.6
+    m = 0.6
     GL_gamma = 0.00001
     GL_eps = 1
     niter = 50
@@ -97,14 +97,14 @@ def microTopOpt():
       + 0.5*w2222*(assemble(inner(sigma(u22, E22, phi), eps(u22) + E22) * dx)-AT2222)**2  \
       + GL_gamma*assemble(GL_eps*dot(grad(phi), grad(phi)) * dx+0.25/GL_eps*(phi*phi-phi)**2*dx)
 
-    m = Control(phi)              
+    cntrl = Control(phi)              
 
-    Jhat = ReducedFunctional(J, m, eval_cb_post=eval_cb)  
+    Jhat = ReducedFunctional(J, cntrl, eval_cb_post=eval_cb)  
 
     lb = 0.0 
     ub = 1.0 
 
-    volume_constraint = UFLInequalityConstraint((Constant(vc) - phi)*dx, m)
+    volume_constraint = UFLInequalityConstraint((Constant(m) - phi)*dx, cntrl)
 
     problem = MinimizationProblem(Jhat, bounds=(lb, ub), constraints=volume_constraint)
     parameters = {"acceptable_tol": 1.0e-16,"maximum_iterations": niter, "print_level": 6}
