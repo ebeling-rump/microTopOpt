@@ -6,10 +6,9 @@ Democratizing Microstructures - A Dolphin-Adjoint Code
 
 # Install & Run
 
-Step 1: Install Anaconda
-https://www.anaconda.com/products/individual
+Step 1: [Install Anaconda](https://docs.continuum.io/anaconda/install/)
 
-Step 2: Update Anaconda, created a „fenicsproject“ virtual environment, install FEniCS, activate the virtual environment and install IPOPT
+Step 2: Update Anaconda, created a „fenicsproject“ virtual environment, [install FEniCS](https://fenicsproject.org/download/), activate the virtual environment and install IPOPT
 
 		conda update conda
 		conda update anaconda
@@ -31,7 +30,7 @@ The first video shows the result of the program as is. The goal is to create a m
   <img src="git_vid.gif" alt="animated" />
 </p>
 
-The second video follows the same incentive. It is run with a larger Volume Constraint of 60% instead of 40%, the number of iteration steps is increased from 50 to 500 and the initial state has less holes. Note that this a shifted version of the result in 
+The second video follows the same incentive, but shows how different parameters can influence the final design. It is run with a larger Volume Constraint of 60% instead of 40%, the number of iteration steps is increased from 50 to 500 and the initial state has less holes. Note that this a shifted version of the result in 
 [Design and testing of 3D-printed micro-architectured polymer materials exhibiting a negative Poisson’s ratio](https://doi.org/10.1007/s00161-019-00851-6)
 
 <p align="center">
