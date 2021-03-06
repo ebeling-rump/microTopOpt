@@ -11,17 +11,17 @@ https://www.anaconda.com/products/individual
 
 Step 2: Update Anaconda, created a „fenicsproject“ virtual environment, install FEniCS, activate the virtual environment and install IPOPT
 
-        conda update conda
-        conda update anaconda
-        conda create -n fenicsproject -c conda-forge fenics
-        conda activate fenicsproject
-        conda install -c conda-forge ipopt
+		conda update conda
+		conda update anaconda
+		conda create -n fenicsproject -c conda-forge fenics
+		conda activate fenicsproject
+		conda install -c conda-forge ipopt
        
 Step 3: Clone the repositoy, navigate to the python file and start the FEniCS program via
 
-	git clone https://github.com/ebeling-rump/microTopOpt.git
-	cd microTopOpt
-	python microTopOpt.py
+		git clone https://github.com/ebeling-rump/microTopOpt.git
+		cd microTopOpt
+		python microTopOpt.py
   
 # Results
 
