@@ -10,14 +10,14 @@ Optimal Microstructures in just a bit over 100 lines of code. Made possible via 
 
 Step 1: [Install Anaconda](https://docs.continuum.io/anaconda/install/)
 
-Step 2: Update Anaconda, created a „fenicsproject“ virtual environment, [install FEniCS](https://fenicsproject.org/download/), activate the virtual environment and install Matplotlib and IPOPT
+Step 2: Create a „fenicsproject“ virtual environment, [install FEniCS](https://fenicsproject.org/download/), activate the virtual environment and install Matplotlib, IPOPT and Dolfin-Adjoint
 
-		conda update conda
-		conda update anaconda
 		conda create -n fenicsproject -c conda-forge fenics
 		conda activate fenicsproject
-		conda install -c conda-forge ipopt
+		conda install -c conda-forge cyipopt
 		conda install -c conda-forge matplotlib
+		pip install git+https://github.com/dolfin-adjoint/pyadjoint.git@2019.1.0
+		conda install -c conda-forge dolfin-adjoint
        
 Step 3: Clone the repositoy, navigate to the python file and start the FEniCS program via
 
