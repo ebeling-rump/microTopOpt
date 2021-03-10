@@ -14,11 +14,10 @@ Step 2: Create a „fenicsproject“ virtual environment, [install FEniCS](https
 
 		conda create -n fenicsproject -c conda-forge fenics
 		conda activate fenicsproject
-		conda install -c conda-forge cyipopt
 		conda install -c conda-forge matplotlib
-		pip install git+https://github.com/dolfin-adjoint/pyadjoint.git@2019.1.0
-		conda install -c conda-forge dolfin-adjoint
-       
+		conda install -c conda-forge cyipopt
+		pip install git+https://github.com/dolfin-adjoint/pyadjoint.git@master
+
 Step 3: Clone the repositoy, navigate to the python file and start the FEniCS program via
 
 		git clone https://github.com/ebeling-rump/microTopOpt.git
