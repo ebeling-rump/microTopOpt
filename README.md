@@ -1,16 +1,13 @@
-
-
-
 # microTopOpt
-A FEniCS & pyadjoint Code
+A FEniCS and Dolphin-Adjoint Code
 
-Optimal Microstructures in just a bit over 100 lines of code. Made possible via pyadjoint, which automatically calculates the adjoint system for the microscopic elasticity problem.
+Optimal Microstructures in just a bit over 100 lines of code. Made possible via Dolfin-Adjoint which automatically calculates the adjoint system for the microscopic elasticity problem.
 
 # Install & Run
 
 Step 1: [Install Anaconda](https://docs.continuum.io/anaconda/install/)
 
-Step 2: Create a „fenicsproject“ virtual environment, [install FEniCS](https://fenicsproject.org/download/), activate the virtual environment and install Matplotlib, IPOPT and pyadjoint
+Step 2: Create a „fenicsproject“ virtual environment, [install FEniCS](https://fenicsproject.org/download/), activate the virtual environment and install Matplotlib, IPOPT and Dolfin-Adjoint
 
 		conda create -n fenicsproject -c conda-forge fenics
 		conda activate fenicsproject
@@ -38,4 +35,3 @@ The second video follows the same incentive, but shows how different parameters 
 <p align="center">
   <img src="allcontrols_IPOPT_w1111_1.0_w1122_30_w2222_1.0_AT1111_0.2_AT1122_-0.1_AT2222_0.2_vc_0.6_GL_gamma_1e-05_GL_eps_1_niter_500_InEq_True_ndof_50_nu_T_-0.5_fst.gif" alt="animated" />
 </p>
-
